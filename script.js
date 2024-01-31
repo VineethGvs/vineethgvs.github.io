@@ -5,16 +5,28 @@ document.addEventListener("DOMContentLoaded", function () {
       link.addEventListener("click", smoothScroll);
     });
   
-    function smoothScroll(e) {
-      e.preventDefault();
+    // function smoothScroll(e) {
+    //   e.preventDefault();
       
+    //   const targetId = this.getAttribute("href").substring(1);
+    //   const targetElement = document.getElementById(targetId);
+      
+    //   window.scroll({
+    //     top: targetElement.offsetTop - document.querySelector("nav").offsetHeight,
+    //     behavior: "smooth"
+    //   });
+    // }
+    function smoothScroll(e) {
       const targetId = this.getAttribute("href").substring(1);
       const targetElement = document.getElementById(targetId);
       
-      window.scroll({
-        top: targetElement.offsetTop - document.querySelector("nav").offsetHeight,
-        behavior: "smooth"
-      });
+      if (targetElement) {
+        e.preventDefault();
+        window.scroll({
+          top: targetElement.offsetTop - document.querySelector("nav").offsetHeight,
+          behavior: "smooth"
+        });
+      }
     }
   });
 
@@ -24,3 +36,4 @@ document.addEventListener("DOMContentLoaded", function () {
     menu.classList.toggle("open");
     icon.classList.toggle("open");
   }
+  

@@ -40,16 +40,28 @@ header {
   font-size: 1.05rem;
 }
 
-.nav-list a, .logo a {
+.nav-list a, .logo a, #about a {
   text-decoration: none;
   color: #180202;
   transition: color 0.3s ease;
 }
 
-.nav-list a:hover, .logo a:hover {
-  color: #999;
+#about a{
+  font-weight: bold;
 }
 
+/* 
+#about a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #180202;
+  transition: color 0.3s ease;
+  transition: all 0.3 ease-in-out;
+} */
+
+.nav-list a:hover, .logo a:hover, #about a:hover {
+  color: #999;
+}
 
 .content {
   width: 65%;
@@ -270,6 +282,14 @@ align-items: center; */
   font-weight: bold;
   margin-left: 10px;
   transition: color 0.3s ease;
+}
+
+.project-link img, #socials-container img {
+  transition: opacity 0.3s ease;
+}
+
+.project-link:hover img, #socials-container img:hover {
+  opacity: 0.3;
 }
 
 /* .project-link:hover {

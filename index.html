@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Vineeth's Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="#home">Vineeth Gudela</a></div>
+            <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="https://drive.google.com/file/d/1M9whtLBW0OJA0LiGFKZhl2lkPP9Y7vVd/view?usp=sharing" target="_blank">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo"><a href="#home">Vineeth Gudela</a></div>
+            <div class="hamburger-menu">
+              <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="https://drive.google.com/file/d/1M9whtLBW0OJA0LiGFKZhl2lkPP9Y7vVd/view?usp=sharing" target="_blank" onclick="toggleMenu()">CV</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+    <div class="content">
+        <section id="home">
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="./images/portfolio-modified.png" alt="Vineeth's profile picture" />
+                </div>
+                <div class="section__text">
+                    <p class="section__text__p1">Hello, I'm</p>
+                    <h1 class="title">Vineeth Gudela</h1>
+                    <p class="section__text__p2">MSCS Student at UCR</p>
+                    <div id="socials-container">
+                        <img
+                        src="./images/linkedin.png"
+                        alt="My LinkedIn profile"
+                        class="icon"
+                        onclick="window.open('https://www.linkedin.com/in/vineeth-gudela/', '_blank')"
+                        />
+                        <img
+                        src="./images/github.png"
+                        alt="My Github profile"
+                        class="icon"
+                        onclick="window.open('https://github.com/VineethGvs', '_blank')"
+                        />
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm Vineeth, currently pursuing my Masters in Computer Science at The University of California Riverside, expecting to be graduated in December 2024. I am very focused and passionate individual with a keen interest in programming, web development, data visualization and web scraping. I am actively seeking internship opportunities in Software Development, Machine Learning starting Summer 2024. Proficient in Python, C++, C and SQL, I am a very passionate programmer and I try solving problems on <a href="https://leetcode.com/VineethGvs/" target="_blank">Leetcode</a> regularly to develop my DS/Algo skills. I have over 2.5 years of work experience as a Software Developer at MBB Labs(Maybank). I have also interned at AGML lab at the Indian Institute of Science(IISc) Bengaluru. You can explore my work on my <a href="https://github.com/VineethGvs" target="_blank">Github</a> and connect with me on <a href="https://www.linkedin.com/in/vineeth-gudela/" target="_blank">LinkedIn</a>.
+            </p>
+            <p>
+                As someone from India, I share the common passion for cricket that many Indians have. I also follow Tennis and Formula 1. I enjoy watching South Indian movies during my free time. Recently I have started playing pickleball.
+            </p>
+        </section>
+
+        <!-- <div class="separator"></div> -->
+        <hr class="project-separator">
+
+        <div class="container">
+            <div class="col">
+            <section id="experience">
+                <h2>Education/Experience</h2>
+                <div class="contents">
+                    
+                    <div class="box">
+                        <h4>Aug 2016 - Jun 2020</h4>
+                        <h3>Indian Institute of Technology(IIT), Hyderabad, India</h3>
+                        <p>Bachelors of Technology in Mechanical Engineering</p>
+                    </div>
+
+                    <div class="box">
+                        <h4>May 2019 - Jul 2019</h4>
+                        <h3>Indian Institute of Science(IISc), Bengaluru, India</h3>
+                        <p>Intern at Applied Geometry and Mechanisms Lab</p>
+                    </div>
+
+                    <div class="box">
+                        <h4>Jul 2020 - Jun 2023</h4>
+                        <h3>MBB Labs(Maybank), Bengaluru, India</h3>
+                        <p>Senior Product Engineer</p>
+                    </div>
+
+                    <div class="box">
+                        <h4>Sep 2023 - Dec 2024</h4>
+                        <h3>University of California, Riverside, USA</h3>
+                        <p>Masters of Science in Computer Science</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        </div>
+
+
+        <!-- <section id="experience">
+            <h2>Education/Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Job Title 1</h3>
+                        <p>Company Name 1</p>
+                        <p>Location 1</p>
+                        <p>Start Date - End Date</p>
+                    </div>
+                </div>
+        
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Job Title 2</h3>
+                        <p>Company Name 2</p>
+                        <p>Location 2</p>
+                        <p>Start Date - End Date</p>
+                    </div>
+                </div>
+        
+            </div>
+        </section> -->
+
+        <hr class="project-separator">
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <section class="project">
+                <div class="project-header">
+                    <h3>Bank marketing data analysis</h3>
+                    <a href="#" class="project-link">
+                        <img
+                        src="./images/github.png"
+                        alt="My Github profile"
+                        class="icon1"
+                        onclick="window.open('https://github.com/VineethGvs/bank-marketing-data-analysis', '_blank')"
+                        />
+                    </a>
+                </div>
+                <p class="project-description">Predicting the likelihood of customers subscribing to the bank deposit in a marketing campaign. Have implemented KNN(using KD tree and ANNOY algorithms) and Decision tree algorithms from scratch with the results in line with the sklearn models.</p>
+            </section>
+ 
+            <section class="project">
+                <div class="project-header">
+                    <h3>Tweet bot for the movie booking stats</h3>
+                    <a href="#" class="project-link">
+                        <img
+                        src="./images/github.png"
+                        alt="My Github profile"
+                        class="icon1"
+                        onclick="window.open('https://github.com/VineethGvs', '_blank')"
+                        />
+                    </a>
+                </div>
+                <p class="project-description">Devised an algorithm to scrape the booking status info from bookmyshow.com for the top trending movies in the major cities of India, the tabular data is then converted into an image which is then tweeted based on the date and time of the day.</p>
+            </section>
+
+
+            <section class="project">
+                <div class="project-header">
+                    <h3>Web based application for spatial queries</h3>
+                    <a href="#" class="project-link">
+                        <img
+                        src="./images/github.png"
+                        alt="My Github profile"
+                        class="icon1"
+                        onclick="window.open('https://github.com/VineethGvs', '_blank')"
+                        />
+                    </a>
+                </div>
+                <p class="project-description">Developed a front-end interface to display the maps for SGPAC and DDCEL spatial queries. Integrated it with the backend Apache Spark algorithms that gives the polygon data. Implemented additional features such as authentication and caching.</p>
+            </section>
+        
+        </section>
+
+        <hr class="project-separator">
+
+        <section id="contact">
+            <section class="contact-info">
+                <h2>Contact Info</h2>
+                <ul>
+                    <li>Email: 
+                        <a href="mailto:vineeth.gudela@gmail.com">vineeth.gudela@gmail.com</a>
+                        <span>|</span>
+                        <a href="mailto:vgude001@ucr.edu">vgude001@ucr.edu</a>
+                    </li>
+                    <li>Phone: +1 951 275 7231</li>
+                    <li>Location: Riverside, CA</li>
+                </ul>
+            </section>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
